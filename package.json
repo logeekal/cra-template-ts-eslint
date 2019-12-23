@@ -2,6 +2,9 @@
   "name": "cra-template-ts-eslint",
   "version": "0.1.0",
   "private": true,
+  "description": "This is typescript template with linting and formatting with eslint and prettier. ",
+  "author": {"name": "logeekal"},
+  "keywords": ["react", "cra-template", "create react app template", "create-react-app","typescript"],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,10 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "lint:fix": "eslint --fix --ext .ts,.tsx ."
   },
   "browserslist": {
     "production": [
@@ -35,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
   }
 }
