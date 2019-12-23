@@ -11,10 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@master
       with:
         registry-url: https://registry.npmjs.org/
-    - name: Run a multi-line script
+    - name: Publish to NPM
       run: |
         npm publish --access public,
         echo Successfully Published.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
