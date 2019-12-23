@@ -1,7 +1,7 @@
 {
   "name": "cra-template-ts-eslint",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "This is typescript template with linting and formatting with eslint and prettier. ",
   "author": {"name": "logeekal"},
   "keywords": ["react", "cra-template", "create react app template", "create-react-app","typescript"],
